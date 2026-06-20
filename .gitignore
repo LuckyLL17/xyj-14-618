@@ -38,6 +38,12 @@ out/
 coverage/
 .nyc_output/
 
+# 测试产物
+test-results.json
+playwright-results.json
+playwright-report/
+test-results/
+
 # 临时文件
 *.tmp
 *.temp
