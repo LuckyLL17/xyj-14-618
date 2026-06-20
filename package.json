@@ -1,0 +1,22 @@
+{
+  "name": "mercury-diary",
+  "version": "1.0.0",
+  "description": "Mercury 加密日记应用",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:e2e": "playwright test",
+    "test:e2e:install": "playwright install --with-deps chromium",
+    "serve": "npx http-server -p 8080 -c-1 .",
+    "report": "node scripts/generate-report.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "@types/jest": "^29.5.12",
+    "http-server": "^14.1.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
