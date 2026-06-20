@@ -1,0 +1,25 @@
+{
+  "name": "xyj-14-618_jupiter",
+  "version": "1.0.0",
+  "description": "一个完全离线运行的加密日记应用，支持富文本编辑、Markdown、天气情绪联动、情感分析和详细的统计功能。",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --testPathPattern=tests/unit",
+    "test:unit": "jest tests/unit",
+    "test:e2e": "playwright test",
+    "test:all": "npm run test:unit && npm run test:e2e",
+    "test:coverage": "jest tests/unit --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.29.7",
+    "@babel/preset-env": "^7.29.7",
+    "@playwright/test": "^1.61.0",
+    "babel-jest": "^29.7.0",
+    "http-server": "^14.1.1",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  }
+}
