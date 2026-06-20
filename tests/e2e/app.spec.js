@@ -132,9 +132,10 @@ test.describe('主界面功能测试 (已登录状态)', () => {
     await page.click('#new-diary-btn');
     await page.waitForSelector('#editor-view:not(.hidden)');
     await expect(page.locator('#emotion-analysis')).toBeVisible();
-    await expect(page.locator('#emotion-positive')).toBeVisible();
-    await expect(page.locator('#emotion-neutral')).toBeVisible();
-    await expect(page.locator('#emotion-negative')).toBeVisible();
+    await expect(page.locator('#emotion-analysis .label')).toContainText('情感分析');
+    await expect(page.locator('.emotion-bar:has-text("积极")')).toBeVisible();
+    await expect(page.locator('.emotion-bar:has-text("中性")')).toBeVisible();
+    await expect(page.locator('.emotion-bar:has-text("消极")')).toBeVisible();
   });
 
   test('应该显示字数统计', async ({ page }) => {
